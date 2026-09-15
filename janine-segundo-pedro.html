@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#10100d">
+<meta name="description" content="JANINE, SEGUNDO PEDRO 🌻 — uma pequena experiência sobre as coisas que ficaram.">
+<title>JANINE, SEGUNDO PEDRO 🌻</title>
+<style>
+  :root{
+    --bg:#0f0f0c;
+    --paper:#171712;
+    --paper2:#1e1d16;
+    --text:#f4f0e6;
+    --muted:#bdb6a5;
+    --sun:#e5b83f;
+    --sun2:#f3cf69;
+    --line:rgba(255,255,255,.10);
+    --shadow:0 20px 60px rgba(0,0,0,.35);
+    --radius:22px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(229,184,63,.10),transparent 28%),var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+  a{color:inherit}
+  .wrap{width:min(980px,92vw);margin:auto}
+  .hero{min-height:100svh;display:grid;place-items:center;padding:40px 0;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid rgba(229,184,63,.14);right:-130px;top:4%;box-shadow:0 0 0 48px rgba(229,184,63,.03),0 0 0 96px rgba(229,184,63,.02)}
+  .hero-card{position:relative;z-index:1;text-align:center;padding:44px 22px;max-width:760px}
+  .tiny{font:600 12px/1.2 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--sun);margin-bottom:22px}
+  h1{font-size:clamp(42px,10vw,84px);line-height:.95;margin:0 0 20px;letter-spacing:-.04em;font-weight:600}
+  .subtitle{font-size:clamp(19px,3.8vw,27px);color:var(--muted);max-width:650px;margin:0 auto}
+  .sunflower{font-size:54px;display:block;margin:30px 0 8px;filter:drop-shadow(0 5px 14px rgba(229,184,63,.2))}
+  .scroll{margin-top:30px;color:var(--sun);font:600 12px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+  main{padding-bottom:80px}
+  section{padding:72px 0;border-top:1px solid var(--line)}
+  .section-kicker{color:var(--sun);font:700 12px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+  h2{font-size:clamp(30px,6vw,48px);line-height:1.05;margin:0 0 18px;font-weight:600;letter-spacing:-.03em}
+  .lead{font-size:20px;color:#ddd6c8;max-width:760px}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:30px}
+  .card{background:linear-gradient(145deg,var(--paper),var(--paper2));border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 8px;font-size:22px}
+  .card p{margin:0;color:var(--muted)}
+  .quote{margin:30px 0;padding:22px 22px 22px 24px;border-left:2px solid var(--sun);background:rgba(229,184,63,.055);border-radius:0 16px 16px 0;font-size:24px;font-style:italic;color:#f2ecdf}
+  .quote small{display:block;margin-top:10px;color:#a9a18f;font:600 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;font-style:normal}
+  .memory{display:grid;grid-template-columns:92px 1fr;gap:18px;align-items:start;margin:25px 0}
+  .date{padding-top:4px;color:var(--sun);font:700 12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+  .memory h3{margin:0 0 4px;font-size:21px}
+  .memory p{margin:0;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+  .chip{padding:8px 11px;border:1px solid rgba(229,184,63,.22);background:rgba(229,184,63,.05);border-radius:999px;color:#e8decb;font:600 12px Arial,sans-serif}
+  .list{margin:0;padding-left:20px;color:var(--muted)}
+  .list li{margin:7px 0}
+  .reveal{margin-top:32px;text-align:center}
+  button{appearance:none;border:1px solid rgba(229,184,63,.38);background:rgba(229,184,63,.08);color:var(--text);padding:13px 18px;border-radius:999px;font:700 13px Arial,sans-serif;letter-spacing:.06em;cursor:pointer}
+  button:active{transform:translateY(1px)}
+  #secret{display:none;margin:22px auto 0;max-width:680px}
+  #secret.show{display:block;animation:fade .7s ease both}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .closing{font-size:clamp(23px,4.7vw,34px);max-width:780px;color:#f1eadc}
+  .signature{margin-top:34px;color:var(--sun);font-size:22px}
+  footer{padding:28px 0 50px;color:#817b6d;text-align:center;font:12px Arial,sans-serif}
+  @media(max-width:700px){.grid{grid-template-columns:1fr}.memory{grid-template-columns:1fr;gap:3px}.date{padding:0}.hero-card{padding:38px 5px}.quote{font-size:21px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-card wrap">
+    <div class="tiny">Uma experiência pessoal de Pedro para Janine</div>
+    <h1>JANINE,<br>SEGUNDO PEDRO</h1>
+    <span class="sunflower">🌻</span>
+    <p class="subtitle">Não é um catálogo sobre você.<br>É uma coleção das pequenas coisas que ficaram em mim depois de te conhecer.</p>
+    <div class="scroll">desça devagar ↓</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <div class="section-kicker">A primeira impressão</div>
+    <h2>Você parecia uma pessoa divertida.<br>Depois eu descobri que era muito mais.</h2>
+    <p class="lead">No começo vieram as conversas aleatórias, as piadas, os “kkkkk”, os filmes, os jogos, a F1 e o futebol. Aos poucos, foram aparecendo outras camadas: uma mulher que cuida de pessoas, uma mãe apaixonada pelo filho, alguém cheia de histórias, gostos próprios, força e também vulnerabilidades.</p>
+    <div class="quote">“Eu gosto de criar essas conexões e conhecer pessoas novas.”<small>— uma frase sua que acabou combinando muito com a forma como tudo começou</small></div>
+  </section>
+
+  <section>
+    <div class="section-kicker">Seu universo</div>
+    <h2>As coisas que fazem você ser você.</h2>
+    <div class="grid">
+      <article class="card"><h3>🎬 Terror, suspense & fantasia</h3><p>Seu gênero favorito é terror — especialmente quando existe suspense de verdade e um enredo que sustenta o medo. Marvel, ficção, fantasia e cinema também entram nessa mistura.</p></article>
+      <article class="card"><h3>🎮 Gamer de carteirinha</h3><p>GTA V, God of War, Lies of P, The Last of Us e Uncharted aparecem entre os seus favoritos. E Dragon Ball guarda aquele lugar especial que vem desde a infância.</p></article>
+      <article class="card"><h3>⚽🏎️ Futebol & corridas</h3><p>Você acompanha futebol, gosta da Alemanha e do Bayern e tem uma paixão muito própria pelo mundo das corridas. É divertido ver o entusiasmo que aparece quando o assunto é esse.</p></article>
+      <article class="card"><h3>🪄 Harry Potter</h3><p>Você é fã de Harry Potter e Relíquias da Morte é o seu favorito. Até assistir algo da saga passou a ter outro significado: virou coisa para ser compartilhada.</p></article>
+      <article class="card"><h3>🍳 O mundo dos queijos</h3><p>Omelete. Quatro queijos. Carne seca com queijo. Pastel, pizza, camarão com queijo. Existe praticamente uma pequena religião do queijo por aqui.</p></article>
+      <article class="card"><h3>🍫 Formiguinha</h3><p>Você gosta de doce — e parece levar a sério a parte de ser boa na cozinha. Chocolate e doces são quase um idioma próprio.</p></article>
+      <article class="card"><h3>📺 Conforto de casa</h3><p>Você se define como caseira. Cinema, séries e videogame ganham pontos. The Office e Eu, a Patroa e as Crianças entram na categoria de companhia perfeita.</p></article>
+      <article class="card"><h3>🌻 Girassol</h3><p>Talvez um dos detalhes mais simples e, por isso mesmo, um dos mais importantes. O girassol deixou de ser só uma flor e virou um símbolo entre nós.</p></article>
+      <article class="card"><h3>12/13 · Dezembro</h3><p>Seu aniversário é no dia 13 de dezembro. Um detalhe que, desde cedo, eu já sabia que não esqueceria.</p></article>
+      <article class="card"><h3>🌎 Suas raízes</h3><p>Rio de Janeiro, passagem por Diadema, duas irmãs e uma história familiar que é só sua. Tem muita coisa por trás da mulher que eu conheci.</p></article>
+    </div>
+    <div class="chips">
+      <span class="chip">Carioca</span><span class="chip">Sagitariana</span><span class="chip">Psicóloga</span><span class="chip">Caseira</span><span class="chip">Gamer</span><span class="chip">Fã de terror</span><span class="chip">Fã de Harry Potter</span><span class="chip">Bayern</span><span class="chip">Alemanha</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-kicker">Bernardo</div>
+    <h2>Existe uma parte sua que anda pelo mundo de carrinho na mão.</h2>
+    <p class="lead">E não dá para falar de você sem falar dele. Bernardo apareceu nas conversas como aparecem as coisas importantes: naturalmente. Nos carrinhos, no Dragon Ball, nos aniversários, nas brincadeiras e, principalmente, no jeito amoroso que ele parece ter com você.</p>
+    <div class="card" style="margin-top:24px"><h3>Um detalhe que eu acho bonito</h3><p>Você é mãe antes de qualquer outro rótulo. E mesmo quando fala de cansaço, rotina, responsabilidades e tudo o que existe por trás disso, aparece um carinho muito claro pelo seu pequeno.</p></div>
+  </section>
+
+  <section>
+    <div class="section-kicker">As pequenas coisas</div>
+    <h2>Algumas coisas que eu não esperava guardar.</h2>
+    <div class="memory"><div class="date">12/04</div><div><h3>Seu cheiro</h3><p>Você nem parece fazer esforço para ser cheirosa. Você simplesmente é. E, de alguma forma, virou uma das coisas que eu mais reconheço em você.</p></div></div>
+    <div class="memory"><div class="date">13/04</div><div><h3>Harry Potter virou assunto nosso</h3><p>Você explicando Relíquias da Morte, eu fingindo que sabia mais do que realmente sabia e a ideia de assistir junto. Pequeno detalhe, grande memória.</p></div></div>
+    <div class="memory"><div class="date">05/05</div><div><h3>O girassol</h3><p>Você confirmou: gostava de omelete e girassol. Algumas informações a gente aprende. Outras, a gente guarda.</p></div></div>
+    <div class="memory"><div class="date">17/05</div><div><h3>Sua risada</h3><p>Você mesma diz que ri o tempo todo. Eu descobri que gosto disso mais do que consigo explicar — porque quando você se diverte, eu também fico feliz de te ver feliz.</p></div></div>
+    <div class="memory"><div class="date">25/05</div><div><h3>Saudade pode ser simples</h3><p>Teve um dia em que você disse que sentiu saudade de conversar comigo. Sem transformar isso em promessa, sem fazer disso algo maior do que era. Só uma saudade honesta. Eu guardei.</p></div></div>
+    <div class="memory"><div class="date">04/06</div><div><h3>O dia seguinte ainda tinha seu cheiro</h3><p>Existem memórias que não precisam de fotografia. Às vezes uma blusa, um travesseiro, uma manhã fria ou um cheiro já fazem o trabalho inteiro.</p></div></div>
+  </section>
+
+  <section>
+    <div class="section-kicker">O que eu gosto em você</div>
+    <h2>Não é só sobre aquilo que você gosta.</h2>
+    <div class="grid">
+      <article class="card"><h3>Sua risada</h3><p>Porque ela é divertida, gostosa e honesta. Não parece fabricada. Quando você realmente está se divertindo, dá para perceber.</p></article>
+      <article class="card"><h3>Seu jeito de me deixar falar</h3><p>Você conseguiu me fazer conversar mesmo quando minha timidez queria colocar tudo para dentro. Você me desafia sem precisar forçar.</p></article>
+      <article class="card"><h3>Seu sorriso quando você se diverte</h3><p>Eu gosto de ver você feliz. Talvez seja uma das coisas mais simples de dizer e uma das mais verdadeiras.</p></article>
+      <article class="card"><h3>Sua mistura improvável</h3><p>Psicóloga, carioca, mãe, gamer, fã de terror, fã de Harry Potter, apaixonada por queijo, futebol e corridas. Você não cabe numa descrição simples — e ainda bem.</p></article>
+    </div>
+    <div class="quote">“Quando você se diverte, eu amo ver o sorriso no seu rosto.”<small>— Pedro</small></div>
+  </section>
+
+  <section>
+    <div class="section-kicker">Um detalhe importante</div>
+    <h2>Eu não quis fazer isso parecer uma ficha sobre você.</h2>
+    <p class="lead">Você é psicóloga. Então talvez fosse especialmente fácil transformar tudo em análise, padrões, tópicos e explicações. Eu fiz o contrário. Juntei lembranças.</p>
+    <p class="lead">Porque te conhecer, para mim, nunca foi sobre decorar informações. Foi sobre perceber pequenas coisas e notar que, depois de um tempo, algumas delas simplesmente ficaram.</p>
+    <div class="reveal">
+      <button id="btn" type="button">tem uma última coisa</button>
+      <div id="secret" class="quote">Talvez seja isso que eu mais gosto: você me dá vontade de continuar descobrindo quem você é, sem precisar transformar cada descoberta em alguma coisa maior do que ela precisa ser.<small>— Pedro</small></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-kicker">Para terminar</div>
+    <h2>Segundo Pedro.</h2>
+    <p class="closing">Se um dia você se perguntar como eu te enxerguei durante todo esse tempo, talvez seja assim: uma mulher cheia de histórias, que ri muito, cuida muito, sente muito, gosta das próprias coisas e tem um jeito muito particular de tornar a vida mais interessante.</p>
+    <p class="closing">E, no meio de tudo isso, existiram momentos simples que eu gostei de viver com você.</p>
+    <p class="signature">Pedro 🌻</p>
+  </section>
+</main>
+
+<footer>Feito para ser lido com calma. Sem pressa, sem cobrança, só carinho.</footer>
+<script>
+  const btn=document.getElementById('btn');
+  const secret=document.getElementById('secret');
+  btn.addEventListener('click',()=>{
+    secret.classList.toggle('show');
+    btn.textContent=secret.classList.contains('show')?'agora você já sabe':'tem uma última coisa';
+    if(secret.classList.contains('show')) secret.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+</script>
+</body>
+</html>
